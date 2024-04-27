@@ -1,14 +1,17 @@
 package udit.dev.models;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class Symbol {
-    private char achar;
+    private char aChar;
 
-    public Symbol(char achar) {
-        this.achar = achar;
+    public Symbol(char aChar) {
+        this.aChar = aChar;
+    }
+
+    public char getaChar() {
+        return aChar;
+    }
+
+    public void setaChar(char aChar) {
+        this.aChar = aChar;
     }
 }

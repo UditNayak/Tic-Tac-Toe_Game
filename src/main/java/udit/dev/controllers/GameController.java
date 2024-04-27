@@ -1,14 +1,17 @@
-package org.example.controllers;
+package udit.dev.controllers;
 
-import org.example.exceptions.InvalidMoveException;
-import org.example.models.Game;
-import org.example.models.GameState;
-import org.example.models.Player;
+import udit.dev.exceptions.InvalidMoveException;
+import udit.dev.models.Game;
+import udit.dev.models.GameState;
+import udit.dev.models.Player;
 
 import java.util.List;
 
 public class GameController {
     public Game startGame(int dimension, List<Player> players) {
+        //TODO
+        //Validate if 2 players have the same symbol or not ?
+        //If 2 players have same symbol, throw some exception.
         return new Game(dimension, players);
     }
 
